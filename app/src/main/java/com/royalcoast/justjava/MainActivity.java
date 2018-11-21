@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
      * returning a string value
      */
     public String submitOrderSummary(int price, boolean addedWhippedCream, boolean addedChocolateCream, String name){
-        String priceMessage = getString(R.string.order_summary_name) + name;
+        String priceMessage = getString(R.string.order_summary_name, name);
         priceMessage += "\n" + getString(R.string.added_whipped_cream) + " " + addedWhippedCream;
         priceMessage += "\n" +getString(R.string.added_chocolate_cream) + " " + addedWhippedCream;
         priceMessage += "\n" + getString(R.string.quantity_message) + quantity;
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayQuantity(int number){
         TextView quantity_text_view = findViewById(R.id.quantity_text_view);
-        quantity_text_view.setText("" + number);
+        quantity_text_view.setText(getString(R.string.space) + number);
     }
 
     /**
