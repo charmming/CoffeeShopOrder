@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         String priceMessage = getString(R.string.order_summary_name, name);
         priceMessage += "\n" + getString(R.string.added_whipped_cream) + " " + addedWhippedCream;
         priceMessage += "\n" +getString(R.string.added_chocolate_cream) + " " + addedChocolateCream;
-        priceMessage += "\n" + getString(R.string.quantity_message) + quantity;
-        priceMessage += "\n" + getString(R.string.total)+ price;
+        priceMessage += "\n" + getString(R.string.quantity_message) + " " + quantity;
+        priceMessage += "\n" + getString(R.string.total) + ": " + price;
         priceMessage += "\n" + getString(R.string.Thank_you);
         return priceMessage;
     }
