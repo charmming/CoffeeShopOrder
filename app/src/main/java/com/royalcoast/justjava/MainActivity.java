@@ -55,12 +55,12 @@ public class MainActivity extends AppCompatActivity {
      * returning a string value
      */
     public String submitOrderSummary(int price, boolean addedWhippedCream, boolean addedChocolateCream, String name){
-        String priceMessage = name;
-        priceMessage += "\n Added Whipped Cream " + addedWhippedCream;
-        priceMessage += "\n Added Chocolate Cream " + addedChocolateCream;
-        priceMessage += "\n Quantity: " + quantity;
-        priceMessage += "\nPrice: " + price;
-        priceMessage += "\n Thank you.";
+        String priceMessage = getString(R.string.order_summary_name) + name;
+        priceMessage += "\n" + getString(R.string.added_whipped_cream) + " " + addedWhippedCream;
+        priceMessage += "\n" +getString(R.string.added_chocolate_cream) + " " + addedWhippedCream;
+        priceMessage += "\n" + getString(R.string.quantity_message) + quantity;
+        priceMessage += "\n" + getString(R.string.total)+ price;
+        priceMessage += "\n" + getString(R.string.Thank_you);
         return priceMessage;
     }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment(View view){
         if(quantity == 100) {
-            Toast.makeText(this, "You can't have more than 100 cups of Coffee", Toast.LENGTH_LONG);
+            Toast.makeText(this, "You can't have more than 100 cups of Coffee", Toast.LENGTH_LONG).show();
             return;
         }
         displayQuantity(quantity +=1);
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void decrement(View view){
         if(quantity == 1){
-            Toast.makeText(this, "You can't have less than 1 cup of Coffee", Toast.LENGTH_LONG);
+            Toast.makeText(this, "You can't have less than 1 cup of Coffee", Toast.LENGTH_LONG).show();
             return;
         }
         displayQuantity(quantity -= 1);

@@ -1,3 +1,20 @@
-<resources>
+<resources xmlns:Xliff="http://schemas.android.com/tools">
     <string name="app_name">JustJava</string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="order">ORDER</string>
+    <string name="_0">$0</string>
+    <string name="order_summary">ORDER SUMMARY</string>
+    <string name="addQuantity">+</string>
+    <string name="quanity">0</string>
+    <string name="subtractQuantity">-</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="chocolate_cream">Chocolate Cream</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="toppings">TOPPINGS</string>
+    <string name="Thank_you">Thank you!</string>
+    <string name="added_whipped_cream">Added Whipped Cream </string>
+    <string name="added_chocolate_cream">Added Chocolate Cream </string>
+    <string name="quantity_message">Quantity:</string>
+    <string name="total">Total</string>
+    <string name="order_summary_name">Name: <Xliff:g id="name" example="Amy">%s</Xliff:g></string>
 </resources>
