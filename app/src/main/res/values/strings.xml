@@ -18,4 +18,5 @@
     <string name="total">Total</string>
     <string name="order_summary_name">Name: <Xliff:g id="name" example="Amy">%s</Xliff:g></string>
     <string name="space">""</string>
+    <string name="subject_message">Just java order for</string>
 </resources>

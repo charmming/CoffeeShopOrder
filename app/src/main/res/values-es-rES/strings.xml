@@ -16,4 +16,5 @@
     <string name="added_chocolate_cream">" Crema De Chocolate Agregada"</string>
     <string name="quantity_message">Cantidad:</string>
     <string name="total">Total</string>
+    <string name="subject_message">Solo orden java para</string>
 </resources>
